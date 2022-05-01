@@ -1,0 +1,166 @@
+:root{
+    --wite:#fff;
+    --black:#212121;
+    --blue:#2196F3;
+    --gray:#757575;
+    --dark-gray:#2F303A;
+}
+
+ul{
+    list-style: none;
+}
+
+.link{
+    text-decoration: none;
+    color: #212121;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+/* -----------HEADER------------- */
+.header{
+    display: flex;
+    width: 1600px;
+    height: 80px;
+    left: 0px;
+    top: 0px;
+    background-color: #fff;
+}
+
+.header-logo{
+    text-decoration: none;
+}
+
+.web_logo{
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 31px;
+    letter-spacing: 0.03em;
+    color: var(--blue);
+}
+
+.studio_logo{
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 31px;
+    letter-spacing: 0.03em;
+    color: var(--black);    
+}
+
+
+.header-item{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+    color: #212121;
+}
+
+.header-item :hover,
+.header-item :focus{
+    color: var(--blue);
+}
+
+.header-nav{
+    width: 294px;
+    height: 16px;
+    margin-top: 0;
+    margin-left: 453px;
+    top: 32px;
+
+}
+
+/* HERO---------------- */
+
+.hero-text{
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 900;
+font-size: 44px;
+line-height: 60px;
+text-align: center;
+letter-spacing: 0.06em;
+text-transform: uppercase;
+}
+
+.hero-button-text{
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 700;
+font-size: 16px;
+line-height: 30px;
+display: flex;
+align-items: center;
+text-align: center;
+letter-spacing: 0.06em;
+}
+
+.hero-button{
+    width: 200px;
+height: 50px;
+left: 700px;
+top: 430px;
+background: var(--blue);
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+border-radius: 4px;
+}
+
+/* SECTION_ONE------------ */
+
+.one-sec-h3{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    
+    color: var(--black);
+}
+
+.one-sec-p{
+    font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 24px;
+/* or 171% */
+
+letter-spacing: 0.03em;
+
+color: var(--gray);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*--------- FOOTER------------ */
+.footer{
+    background-color: var(--dark-gray);
+}
+
+
+.studio_logo_footer{
+    font-family: 'Raleway';
+font-style: normal;
+font-weight: 700;
+font-size: 26px;
+line-height: 31px;
+letter-spacing: 0.03em;
+    color: var(--wite);
+}
