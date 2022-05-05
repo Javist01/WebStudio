@@ -5,54 +5,71 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WebStudio</title>
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
         rel="stylesheet">
+        <link rel="stylesheet" href="./css/reset.css">
+        <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
                                             <!-- Header -->
     <header class="header">
+        <div class="container header-container">
         <a class="header-logo link" href="./index.html"><span class="web_logo">Web</span><span class="studio_logo">Studio</span></a>
     <nav class="header-nav">
         <ul class="header-list">
-            <li class="header-item"><a class="link" href="./index.html">Студия</a></li>
-            <li class="header-item"><a class="link" href="./portfolio.html">Портфолио</a></li>
-            <li class="header-item"><a class="link" href="">Контакты</a></li>
+            <li class="header-item header-item-margin"><a class="link" href="./index.html">Студия</a></li>
+            <li class="header-item header-item-margin"><a class="link" href="./portfolio.html">Портфолио</a></li>
+            <li class="header-item header-item-margin"><a class="link" href="">Контакты</a></li>
         </ul>
     </nav>
-        <a class="header-tel" href="tel:+380961111111">+38 096 111 11 11</a>
-        <a class="header-mail" href="mailto:info@devstudio.com">info@devstudio.com</a>
+    <div class="header-contact">
+        <ul class="header-contact-list">
+            <li class="header-contact-item"><a class="header-tel" href="tel:+380961111111">+38 096 111 11 11</a></li>
+            <li class="header-contact-item"><a class="header-mail" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+        </ul>
+    </div>    
+        </div>
     </header>
+
+    <div class="header-line"></div>
                                             <!-- Hero Section -->
     <section class="hero">
-        <img class="hero-img" src="../img/jpg-img/hero_img.jpg" alt="team" width="1600">
+        <div class="container">
+        <!-- <img class="hero-img" src="../img/jpg-img/hero_img.jpg" alt="team" width="1200"> -->
         <h1 class="hero-text">эффективные решиния <br> для вашего бизнеса</h1>
         <button class="hero-button" type="button"> <p class="hero-button-text">Заказать услугу</p></button>
+        </div>   
     </section>
 
                                             <!-- Section_One -->
 <section class="one-section">
+    <div class="container">
     <ul class="one-sec-list">
         <li class="one-sec-item"> <h3 class="one-sec-h3">внимание к деталям</h3> <p class="one-sec-p">Идейные соображения, а также начало повседневной работы по формированию позиции.</p></li>
         <li class="one-sec-item"> <h3 class="one-sec-h3">пунктуальность</h3> <p class="one-sec-p">Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p></li>
         <li class="one-sec-item"> <h3 class="one-sec-h3">планирование</h3> <p class="one-sec-p">Равным образом консультация с широким активом в значительной степени обуславливает.</p></li>
-        <li class="one-sec-item"> <h3 class="one-sec-h3">современные тезнологии</h3> <p class="one-sec-p"99>Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p></li>
+        <li class="one-sec-item"> <h3 class="one-sec-h3">современные технологии</h3> <p class="one-sec-p"99>Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p></li>
     </ul>
+    </div>
 </section>
                                             <!-- Section_two -->
 <section class="two-section">
+    <div class="container">
     <h2 class="two-sec-h2">Чем мы занимаемся</h2>
     <ul class="two-sec-list">
         <li class="two-sec-item"> <img src="./img/jpg-img/sec_2img.jpg" alt="" width="370" height="294"> </li>
         <li class="two-sec-item"> <img src="./img/jpg-img/sec2_img.jpg" alt="" width="370" height="294"> </li>
         <li class="two-sec-item"> <img src="./img/jpg-img/sec2_img (2).jpg" alt="" width="370" height="294"></li>
     </ul>
+    </div>
 </section>
                                             <!-- Section_three -->
 <section class="three-section">
+    <div class="container">
     <h3 class="three-sec-h3">Наша команда</h3>
     <ul class="three-sec-list">
         <li class="sec-three-item"><img src="./img/jpg-img/sec3_img.jpg" alt="" width="270" height="260">
@@ -96,9 +113,11 @@
             </ul>
         </li>
     </ul>
+    </div>
 </section>                                            
                                             <!-- Section_four -->
 <section class="four-section">
+    <div class="container">
     <h2>Постоянные клиенты</h2>
     <ul>
         <li></li>
@@ -108,15 +127,18 @@
         <li></li>
         <li></li>
     </ul>
+    </div>
 </section>       
                                             <!-- Footer -->
 <footer class="footer">
+    <div class="container">
     <a class="header-logo" href="./index.html"><span class="web_logo">Web</span><span class="studio_logo_footer">Studio</span></a>
     <address class="adres">г. Киев, пр-т Леси Украинки, 26</address>
         <ul class="info-footer">
             <li><a class="mail-footer" href="mail:info@devstudio.com">info@devstudio.com</a></li>
             <li><a class="numb-footer" href="tel:+380961111111">+38 096 111 11 11</a></li>
         </ul>
+    </div>
 </footer>                                            
 </body>
 </html>
