@@ -17,7 +17,7 @@ ul{
 
 body{
     font-family: 'Roboto', sans-serif;
-    background-color: rgb(153, 149, 149);
+    background-color: var(--wite);
 }
 
 .container {
@@ -25,7 +25,7 @@ body{
     padding-left: 15px;
     padding-right: 15px;
     margin: 0 auto;
-    outline: solid 1px red;
+    /* outline: solid 1px red; */
 }
 /* -----------HEADER------------- */
 .header{
@@ -47,9 +47,7 @@ body{
     font-weight: 700;
     font-size: 26px;
     line-height: 31px;
-/* identical to box height */
-
-letter-spacing: 0.03em;
+    letter-spacing: 0.03em;
 }
 
 .web_logo{
@@ -302,6 +300,7 @@ letter-spacing: 0.03em;
 
 .sec-three-img{
     margin-bottom: 30px;
+    border-radius: 0px;
 }
 
 .sec-three-name{
@@ -327,6 +326,10 @@ letter-spacing: 0.03em;
 
 /* -----PORTFOLIO----------- */
 
+.hero-section-port{
+    padding-bottom: 94px;
+}
+
 .menu_section{
     padding-top: 94px;
     padding-bottom: 34px;
@@ -349,17 +352,23 @@ letter-spacing: 0.03em;
     line-height: 26px;
     text-align: center;
     letter-spacing: 0.03em;
-    color: var(--black);
+    color: #212121;
+    padding: 6px 22px;
     background: #F5F4FA;
     border-radius: 4px;
-    padding: 6px 22px;
+    cursor: pointer;
+    transition: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    
 }
 
-.button-portfolio:hover,
-.button-portfolio:focus{
+.button-portfolio:hover {
+    color: #FFFFFF;
+}
+
+.button-portfolio:hover, button {
     background: #2196F3;
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-    border-radius: 4px;
 }
 
 .h3-name-project{
@@ -369,6 +378,7 @@ letter-spacing: 0.03em;
     font-size: 18px;
     line-height: 36px;
     letter-spacing: 0.06em;
+    margin-bottom: 4px;
     color: var(--black);
 }
 
@@ -382,12 +392,41 @@ letter-spacing: 0.03em;
     color: var(--gray);
 }
 
+.project-list{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0px -30px 0px 0px ;
+    padding: 0;
+}
+
+.project-item{
+    margin-right: 30px;
+    margin-bottom: 30px;
+    cursor: pointer;
+    background: #FFFFFF;
+    border: 1px solid #EEEEEE;
+}
+
+.project-item:nth-child(3n){
+    margin-right: 0px;
+}
+
+.project-name{
+    padding: 20px 24px;
+}
+
+.project-img{
+    width:370px; 
+    height:294px;
+}
 
 /*--------- FOOTER------------ */
 .footer{
-    margin-top: 94px;
     background-color: var(--dark-gray);
+    width: 100%;
+    padding: 0;
 }
+
 
 .footer-logo{
     text-decoration: none;
@@ -396,7 +435,22 @@ letter-spacing: 0.03em;
     font-weight: 700;
     font-size: 26px;
     line-height: 31px;
+    letter-spacing: 0.03em;
+    
+}
+
+/* .list-footer{
+    padding-top: 9px;
+} */
+
+.item-footer:not(:last-child){
+    margin-top: 9px;
+    margin-bottom: 9px;
+}
+
+.logo-footer-div{
     padding-top: 60px;
+    padding-bottom: 60px;
 }
 
 .studio_logo_footer{
@@ -427,7 +481,10 @@ letter-spacing: 0.03em;
     line-height: 24px;
     letter-spacing: 0.03em;
     color: var(--wite);
+    padding-top: 20px;
+    
 }
+
 
 .mail-footer{
     text-decoration: none;
