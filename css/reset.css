@@ -9,8 +9,24 @@ ul, ol{
 
 button{
     cursor: pointer;
+    border: none;
 }
 
 img{
     display: block;
+}
+
+:hover{
+    -webkit-transition: 250ms;
+    transition: 250ms;
+    -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+}
+:focus{
+    -webkit-transition: 250ms;
+    transition: 250ms;
+    -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
 }
