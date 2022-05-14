@@ -21,23 +21,31 @@
         <a class="header-logo link" href="./index.html"><span class="web_logo">Web</span><span class="studio_logo">Studio</span></a>
     <nav class="header-nav">
         <ul class="header-list">
-            <li class="header-item header-item-margin"><a class="link" href="./index.html">Студия</a></li>
+            <li class="header-item header-item-margin"><a class="link link-first" href="./index.html">Студия</a></li>
             <li class="header-item header-item-margin"><a class="link" href="./portfolio.html">Портфолио</a></li>
             <li class="header-item header-item-margin"><a class="link" href="">Контакты</a></li>
         </ul>
     </nav>
-    <div class="header-contact">
         <ul class="header-contact-list">
-            <li class="header-contact-item"><a class="header-tel" href="tel:+380961111111">+38 096 111 11 11</a></li>
-            <li class="header-contact-item"><a class="header-mail" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+            <li class="header-contact-item">
+                <a class="header-mail" href="mailto:info@devstudio.com">
+                <svg class="icon-mail" width="16" height="12">
+                    <use href="./img/svg/symbol-defs.svg#icon-mail-icon"></use>
+                </svg>
+                info@devstudio.com</a></li>
+                <li class="header-contact-item">
+                    <a class="header-tel" href="tel:+380961111111">
+                    <svg class="icon-tel" width="10" height="16">
+                        <use href="./img/svg/symbol-defs.svg#icon-smartphone"></use>
+                    </svg>
+                    +38 096 111 11 11</a></li>
         </ul>
-    </div>    
-        </div>
+    </div>
     </header>
 
     <div class="header-line"></div>
                                             <!-- Hero Section -->
-    <section class="hero">
+    <section class="hero hero-img">
         <div class="container">
         <h1 class="hero-text">эффективные решиния <br> для вашего бизнеса</h1>
         <button class="hero-button" type="button"> <p class="hero-button-text">Заказать услугу</p></button>
@@ -84,9 +92,21 @@
     <div class="container">
     <h2 class="two-sec-h2">Чем мы занимаемся</h2>
     <ul class="two-sec-list">
-        <li class="two-sec-item"> <img src="./img/jpg-img/sec_2img.jpg" alt="" width="370" height="294"> </li>
-        <li class="two-sec-item"> <img src="./img/jpg-img/sec2_img.jpg" alt="" width="370" height="294"> </li>
-        <li class="two-sec-item"> <img src="./img/jpg-img/sec2_img (2).jpg" alt="" width="370" height="294"></li>
+        <li class="two-sec-item"> <img src="./img/jpg-img/sec_2img.jpg" alt="" width="370" height="294">
+        <div class="sec-two-back">
+            <h2 class="sec-two-back-text">Десктопные приложения</h2>
+        </div>
+        </li>
+        <li class="two-sec-item"> <img src="./img/jpg-img/sec2_img.jpg" alt="" width="370" height="294">
+            <div class="sec-two-back">
+                <h2 class="sec-two-back-text">Мобильные приложения</h2>
+            </div>
+        </li>
+        <li class="two-sec-item"> <img src="./img/jpg-img/sec2_img (2).jpg" alt="" width="370" height="294">
+            <div class="sec-two-back">
+                <h2 class="sec-two-back-text">Дизайнерские решения</h2>
+            </div>
+        </li>
     </ul>
     </div>
 </section>
@@ -285,7 +305,7 @@
         <li class="link-four">
             <a href="#" class="four-item-link">
                 <svg class="item-svg" width="106" height="60">
-                    <use href="./img/svg/symbol-defs.svg#icon-Logo"></use>
+                    <use href="./img/svg/symbol-defs.svg#icon-Logo-6"></use>
                 </svg>
             </a>
         </li>
@@ -294,7 +314,7 @@
 </section>       
                                             <!-- Footer -->
 <footer class="footer">
-    <div class="container">
+    <div class="container footer-container">
     <div class="logo-footer-div">  
         <a class="footer-logo" href="./index.html"><span class="web_logo_footer">Web</span><span class="studio_logo_footer">Studio</span></a>
     <address class="adres">г. Киев, пр-т Леси Украинки, 26
@@ -306,31 +326,35 @@
     </div>
 
     <div class="footer-social">
-        <h3 class="footer-join">присоединяйтесь</h3>
+        <h2 class="footer-join">присоединяйтесь</h2>
         <ul class="list-social">
             <li class="item-social">
-                <a href="#" class="link-social"></a>
+                <a href="#" class="link-social">
                 <svg class="social-svg" width="20" height="20">
                     <use href="./img/svg/symbol-defs.svg#icon-instagram"></use>
                 </svg>
+                </a>
             </li>
             <li class="item-social">
-                <a href="#" class="link-social"></a>
+                <a href="#" class="link-social">
                 <svg class="social-svg" width="20" height="20">
                     <use href="./img/svg/symbol-defs.svg#icon-twitter"></use>
                 </svg>
+                </a>
             </li>
             <li class="item-social">
-                <a href="#" class="link-social"></a>
+                <a href="#" class="link-social">
                 <svg class="social-svg" width="20" height="20">
                     <use href="./img/svg/symbol-defs.svg#icon-facebook"></use>
                 </svg>
+                </a>
             </li>
             <li class="item-social">
-                <a href="#" class="link-social"></a>
+                <a href="#" class="link-social">
                 <svg class="social-svg" width="20" height="20">
                     <use href="./img/svg/symbol-defs.svg#icon-linkedin"></use>
                 </svg>
+                </a>
             </li>
         </ul>
     </div>
