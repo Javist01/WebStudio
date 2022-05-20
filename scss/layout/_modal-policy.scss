@@ -1,0 +1,43 @@
+.check-text{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    color: #757575;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    & .span-check{
+        width: 16px;
+        height: 15px;
+        border-radius: 2px;
+        border: 2px solid #212121;
+        margin-right: 7px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.check-text-blue{
+    text-decoration: underline;
+    color: var(--blue);
+}
+
+.check-svg{
+    fill: transparent ;
+    .policy-check:checked + .check-text &{
+        fill: var(--wite);
+    }
+}
+
+.policy-check:checked + .check-text .span-check{
+    border: none;
+    background-color:var(--blue);
+}
+
+.policy-check:checked + .check-text .check-svg{
+    fill: var(--wite);
+}
