@@ -1,11 +1,10 @@
 
 .menu_section{
+    padding-top: 60px;
+    padding-bottom: 40px;
     // padding-top: 94px;
     // padding-bottom: 34px;
-    @media screen and(min-width:480px) {
-        padding-top: 60px;
-        padding-bottom: 40px;
-    }
+    
     // @media screen and(min-width:1200px){
     //     padding-bottom: 94px;
     // }
@@ -13,21 +12,15 @@
 
 
 .menu-list{
-    // display: flex;
+    display: inline-flex;
+    max-width: 362px;
     // justify-content: center; на десктоп
-    @media screen and(max-width:480px) {
-        width: 362px;
-        display:flex;
-        // justify-content: center;
-    }
 }
 
 
 .menu-item:not(:last-child){
-    @media screen and(min-width:480px) {
         margin-right: 8px;
         margin-bottom: 15px;        
-    }
 
 }
 
@@ -42,7 +35,7 @@
     text-align: center;
     letter-spacing: 0.03em;
     color: #212121;
-    padding: 6px 22px 6px 22px;-webkit-transition: 250ms;
+    padding: 6px 22px;-webkit-transition: 250ms;
     transition: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 

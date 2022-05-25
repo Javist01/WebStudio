@@ -26,7 +26,6 @@
 }
 
 .list-four{
-    // margin-left: -30px;
     @media screen and(min-width:480px) {
         display: flex;
         flex-wrap: wrap;
@@ -51,7 +50,6 @@
 }
 
 .link-four{
-    // margin-bottom: 30px;
     @media screen and(min-width:480px){
         width: calc(100% / 2 - 30px);
         margin: 15px;

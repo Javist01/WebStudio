@@ -29,13 +29,7 @@
 }
 
 .one-sec-item{
-    // width: calc(100% / 4 - 30px);
-    // margin-left: 30px;
-    // width: 270px;    
-    // margin-bottom: 30px;
-    @media screen and(min-width:480px) {
         margin-bottom: 30px;
-    }
     @media screen and(min-width:768px){
         width: calc(100% / 2 - 30px);
         margin-left: 30px;
@@ -60,7 +54,8 @@
         align-items: center;
         background: #F5F4FA;
         border-radius: 4px;
-        
+        align-items: center;
+        text-align: center;
         @media screen and(min-width:768px){
             width: 354px;
         }
