@@ -1,10 +1,18 @@
 .form-email-footer{
-    padding-top: 72px;
-    padding-left: 93px;
-    padding-bottom: 94px;
+    @media screen and(min-width:480px) {
+        padding-top: 60px;    
+    }
+    @media screen and(min-width:768px) {
+        padding-top: 60px;
+    }
+    @media screen and(min-width:1200px){
+        padding-left: 93px;
+        padding-top: 0;
+    }
 }
 
 .text-form{
+    text-align: center;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 700;
@@ -13,20 +21,22 @@
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #FFFFFF;
-    margin-bottom: 20px;
+    padding-bottom: 20px;
 }
 
 
 .form-input-footer{
-    width: 358px;
+    width: 450px;
     height: 50px;
     border: 1px solid rgba(255, 255, 255, 0.3);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
     padding-top: 15px;
-    padding-bottom: 15px;
     padding-left: 16px;
     background-color:#2F303A;
+    @media screen and(min-width:1200px) {
+        width: 358px;
+    }
     &::placeholder{
         font-family: 'Roboto';
         font-style: normal;
@@ -45,14 +55,23 @@
     background: #2196F3;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
-    margin-left: 12px;
+    margin-top: 30px;
+    @media screen and(min-width:480px) {
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
+    @media screen and(min-width:1200px){
+        margin-left: 12px;
+        margin-right: 0;
+        margin-top: 0;
+    }
     &{
         font-family: 'Roboto';
         font-style: normal;
         font-weight: 700;
         font-size: 16px;
         line-height: 30px;
-        /* padding-bottom: 10px;     */
         text-align: center;
         letter-spacing: 0.06em;
         color: #FFFFFF;
@@ -66,9 +85,12 @@
 
     
 .block-form{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @media screen and(min-width:1200px) {
+        display: flex;
+        justify-content: center;
+        align-items: center;    
+    }
+    
 }
 
 .svg-telegram{

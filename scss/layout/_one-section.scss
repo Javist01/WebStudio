@@ -1,21 +1,72 @@
 .one-section{
-    padding-bottom: 94px;
-    padding-top: 94px;
+    padding-bottom: 60px;
+    padding-top: 60px;
+    @media screen and(min-width:1200px) {
+        padding-bottom: 94px;
+        padding-top: 94px;
+    }
 }
 
 
 .one-sec-list{
-    flex-wrap: wrap;
-    margin-left: -30px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    margin-bottom: -30px;
+    @media screen and(min-width:768px) {
+        flex-wrap: wrap;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: -30px;
+        margin-bottom: -30px;
+    }
+    @media screen and(min-width:1200px) {
+        flex-wrap: wrap;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: -30px;
+        margin-bottom: -30px;
+    }
 }
 
 .one-sec-item{
-    width: calc(100% / 4 - 30px);
-    margin-left: 30px;
-    width: 270px;    
+    // width: calc(100% / 4 - 30px);
+    // margin-left: 30px;
+    // width: 270px;    
+    // margin-bottom: 30px;
+    @media screen and(min-width:480px) {
+        margin-bottom: 30px;
+    }
+    @media screen and(min-width:768px){
+        width: calc(100% / 2 - 30px);
+        margin-left: 30px;
+        margin-bottom: 30px;
+        height: 251px;
+    }
+    @media screen and(min-width:1200px){
+        width: calc(100% / 4 - 30px);
+        margin-left: 30px;
+        margin-bottom: 30px; 
+    }
+}
+
+.one-sec-icon{
+        background: #F5F4FA;
+        border-radius: 4px;
+        width: 450px;
+        height: 120px;
+        margin-bottom: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #F5F4FA;
+        border-radius: 4px;
+        
+        @media screen and(min-width:768px){
+            width: 354px;
+        }
+        @media screen and(min-width:1200px){
+            width: 270px;
+        }
 }
 
 .one-sec-h3{
@@ -28,6 +79,9 @@
     text-transform: uppercase;
     margin-bottom: 10px;
     color: var(--black);
+        @media screen and(max-width:768px){
+            text-align: center;            
+        }
 }
 
 .one-sec-p{
@@ -40,16 +94,7 @@
     color: var(--gray);
 }
 
-.one-sec-icon{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: #F5F4FA;
-    border-radius: 4px;
-    width: 270px;
-    height: 120px;
-    margin-bottom: 30px;
-}
+
 
 .icn-antena{
     width: 70px;

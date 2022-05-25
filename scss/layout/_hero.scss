@@ -2,7 +2,10 @@
     height: 600px;
     padding: 200px 0px;
     text-align: center;
-    padding-bottom: 94px;
+    padding-bottom: 60px;
+    @media screen and(min-width:1200px) {
+        padding-bottom: 94px;
+    }
 }
 
 .hero-img{
@@ -22,11 +25,16 @@
     font-family: Roboto;
     font-style: normal;
     font-weight: 900;
-    font-size: 44px;
-    line-height: 60px;
+    font-size: 26px;
+    line-height: 42px;
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: var(--wite);
+    @media screen and(min-width:1200px) {
+        font-weight: 900;
+        font-size: 44px;
+        line-height: 60px;
+    }
 }
 
 .hero-button-text{
@@ -38,6 +46,7 @@
     letter-spacing: 0.06em;
     line-height: 30px;
     color: var(--wite);
+    
 }
 
 .hero-button{
