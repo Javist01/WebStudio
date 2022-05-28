@@ -275,6 +275,7 @@ img {
 }
 
 .hero-img {
+  background-size: cover;
   margin-left: auto;
   margin-right: auto;
   background-repeat: no-repeat;
@@ -290,6 +291,7 @@ img {
 
 @media screen and (min-width: 768px) {
   .hero-img {
+    background-size: cover;
     margin-left: auto;
     margin-right: auto;
     background-repeat: no-repeat;
@@ -305,6 +307,7 @@ img {
 
 @media screen and (min-width: 768px) and (min-width: 1200px) {
   .hero-img {
+    background-size: cover;
     margin-left: auto;
     margin-right: auto;
     background-repeat: no-repeat;
