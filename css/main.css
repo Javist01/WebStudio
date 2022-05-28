@@ -275,14 +275,50 @@ img {
 }
 
 .hero-img {
-  background-color: var(--dark-gray);
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/jpg-img/hero_img.jpg);
-  max-width: 1600px;
   margin-left: auto;
   margin-right: auto;
+  background-repeat: no-repeat;
+  background-color: var(--dark-gray);
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/x1-mob/Hero-x1.jpg);
 }
 
-.hero-text {
+@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero-img {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/x2-mob/Hero-x2.jpg);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .hero-img {
+    margin-left: auto;
+    margin-right: auto;
+    background-repeat: no-repeat;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/x1-tablet/Hero-x1.jpg);
+  }
+}
+
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .hero-img {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/x2-tablet/Hero-x2.jpg);
+  }
+}
+
+@media screen and (min-width: 768px) and (min-width: 1200px) {
+  .hero-img {
+    margin-left: auto;
+    margin-right: auto;
+    background-repeat: no-repeat;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/jpg-img/hero_img.jpg);
+  }
+}
+
+@media screen and (min-width: 768px) and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .hero-img {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/jpg-img/Hero-x2.jpg);
+  }
+}
+
+.hero-img .hero-text {
   padding-bottom: 30px;
   text-align: center;
   font-family: Roboto;
@@ -296,14 +332,14 @@ img {
 }
 
 @media screen and (min-width: 1200px) {
-  .hero-text {
+  .hero-img .hero-text {
     font-weight: 900;
     font-size: 44px;
     line-height: 60px;
   }
 }
 
-.hero-button-text {
+.hero-img .hero-button-text {
   font-style: normal;
   font-family: 'Roboto';
   font-size: 16px;
@@ -314,7 +350,7 @@ img {
   color: var(--wite);
 }
 
-.hero-button {
+.hero-img .hero-button {
   min-width: 200px;
   min-height: 50px;
   padding: 0;
@@ -325,7 +361,7 @@ img {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.hero-button:hover {
+.hero-img .hero-button:hover {
   background-color: #188CE8;
 }
 
