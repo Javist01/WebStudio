@@ -15,7 +15,7 @@
 </head>
 <body>
                                             <!-- Header -->
-    <!-- <header class="header">
+    <header class="header">
         <div class="container header-container">
         <a class="header-logo link" href="./index.html"><span class="web_logo">Web</span><span class="studio_logo">Studio</span></a>
     <nav class="header-nav">
@@ -39,8 +39,43 @@
                     </svg>
                     +38 096 111 11 11</a></li>
         </ul>
+        <button type="button" class="btn-open-menu" data-modal-open>    
+            <svg class="svg-open-menu" width="40" height="40">
+                <use href="./img/svg/./symbol-defs.svg#icon-open-menu-btn"></use>
+            </svg>
+        </button>
     </div>
-    </header> -->
+    
+    <div class="mob-menu is-hidden" data-modal>
+        <div class="container caontainer-mob-menu">
+        <button type="button" class="btn-close-menu" data-modal-close>
+            <svg class="svg-close-menu" width="40" height="40">
+                <use href="./img/svg/./symbol-defs.svg#icon-close-menu-btn"></use>
+            </svg>
+        </button>
+        <div class="mob-section-menu">
+        <ul class="mob-menu-list">
+            <li class="mob-menu-item"><a class="list-mob-menu" href="./index.html">Студия</a></li>
+            <li class="mob-menu-item"><a class="list-mob-menu" href="./portfolio.html">Портфолио</a></li>
+            <li class="mob-menu-item"><a class="list-mob-menu" href="">Контакты</a></li>
+        </ul>
+        </div>
+        <div class="mob-section-connect">
+            <a class="mob-header-tel" href="tel:+380961111111">+38 096 111 11 11</a>
+            <a class="mob-header-mail" href="mailto:info@devstudio.com">info@devstudio.com</a>
+        </div>
+
+    <div class="mob-section-social">
+        <ul class="mob-list-social">
+            <li class="mob-item-social">Instagram</li>
+            <li class="mob-item-social">Twitter</li>
+            <li class="mob-item-social">Facebook</li>
+            <li class="mob-item-social">LinkedIn</li>
+        </ul>
+    </div>
+        </div>
+    </div>
+    </header>
 
     <!-- <div class="header-line"></div> -->
                                             <!-- Hero Section -->
@@ -528,6 +563,7 @@
         </div>
     </div>
 
+    <script src="./js/mob-menu.js"></script>
     <script src="./js/modal.js"></script>
 </body>
 </html>

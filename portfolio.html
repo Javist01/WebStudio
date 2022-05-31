@@ -14,32 +14,69 @@
         <link rel="stylesheet" href="./css/main.min.css">
 </head>
 <body>
-    <!-- <header class="header">
-        <div class="container header-container">
-        <a class="header-logo link" href="./index.html"><span class="web_logo">Web</span><span class="studio_logo">Studio</span></a>
-    <nav class="header-nav">
-        <ul class="header-list">
-            <li class="header-item header-item-margin"><a class="link" href="./index.html">Студия</a></li>
-            <li class="header-item header-item-margin"><a class="link link-second" href="./portfolio.html">Портфолио</a></li>
-            <li class="header-item header-item-margin"><a class="link" href="">Контакты</a></li>
-        </ul>
-    </nav>
+
+                                        <!-- HEADER -->
+<header class="header">
+    <div class="container header-container">
+                 <a class="header-logo link" href="./index.html"><span class="web_logo">Web</span><span class="studio_logo">Studio</span></a>
+            <nav class="header-nav">
+                <ul class="header-list">
+                    <li class="header-item header-item-margin"><a class="link link-first" href="./index.html">Студия</a></li>
+                    <li class="header-item header-item-margin"><a class="link" href="./portfolio.html">Портфолио</a></li>
+                    <li class="header-item header-item-margin"><a class="link" href="">Контакты</a></li>
+                </ul>
+            </nav>
         <ul class="header-contact-list">
             <li class="header-contact-item">
-                <a class="header-mail" href="mailto:info@devstudio.com">
-                <svg class="icon-mail" width="16" height="12">
-                    <use href="./img/svg/symbol-defs.svg#icon-mail-icon"></use>
-                </svg>
-                info@devstudio.com</a></li>
-                <li class="header-contact-item">
-                    <a class="header-tel" href="tel:+380961111111">
+                        <a class="header-mail" href="mailto:info@devstudio.com">
+                    <svg class="icon-mail" width="16" height="12">
+                <use href="./img/svg/symbol-defs.svg#icon-mail-icon"></use>
+            </svg>
+        info@devstudio.com</a></li>
+                            <li class="header-contact-item">
+                        <a class="header-tel" href="tel:+380961111111">
                     <svg class="icon-tel" width="10" height="16">
-                        <use href="./img/svg/symbol-defs.svg#icon-smartphone"></use>
-                    </svg>
-                    +38 096 111 11 11</a></li>
-        </ul>
+                <use href="./img/svg/symbol-defs.svg#icon-smartphone"></use>
+            </svg>
+        +38 096 111 11 11</a></li>
+    </ul>
+            <button type="button" class="btn-open-menu" data-modal-open>    
+                <svg class="svg-open-menu" width="40" height="40">
+                    <use href="./img/svg/./symbol-defs.svg#icon-open-menu-btn"></use>
+                </svg>
+            </button>
+        </div>
+                                        
+    <div class="mob-menu is-hidden" data-modal>
+        <div class="container caontainer-mob-menu">
+            <button type="button" class="btn-close-menu" data-modal-close>
+                        <svg class="svg-close-menu" width="40" height="40">
+                    <use href="./img/svg/./symbol-defs.svg#icon-close-menu-btn"></use>
+                </svg>
+            </button>
+        <div class="mob-section-menu">
+     <ul class="mob-menu-list">
+        <li class="mob-menu-item"><a class="list-mob-menu" href="./index.html">Студия</a></li>
+        <li class="mob-menu-item"><a class="list-mob-menu" href="./portfolio.html">Портфолио</a></li>
+        <li class="mob-menu-item"><a class="list-mob-menu" href="">Контакты</a></li>
+    </ul>
+            </div>
+        <div class="mob-section-connect">
+    <a class="mob-header-tel" href="tel:+380961111111">+38 096 111 11 11</a>
+    <a class="mob-header-mail" href="mailto:info@devstudio.com">info@devstudio.com</a>
+            </div>
+                                    
+        <div class="mob-section-social">
+    <ul class="mob-list-social">
+        <li class="mob-item-social">Instagram</li>
+        <li class="mob-item-social">Twitter</li>
+        <li class="mob-item-social">Facebook</li>
+        <li class="mob-item-social">LinkedIn</li>
+    </ul>
+            </div>
+        </div>
     </div>
-    </header> -->
+</header>
 
     <div class="header-line"></div> 
                                         <!-- section_button -->
@@ -60,7 +97,7 @@
         <li class="project-item">
             <div class="menutranslate">
                 <picture>
-                    <source srcset="./img/jpg-img/portfolio-1.jpg 1x,
+                    <source srcset="./img/jpg-img/portfolio-1x.jpg 1x,
                                     ./img/jpg-img/port-1-x2.jpg 2x"
                                     media="(min-width:1200px)"
                                     />
@@ -68,11 +105,11 @@
                                     ./img/x2-tablet/port-1-x2.jpg 2x"
                                     media="(min-width:768px)"
                                     />
-                    <source srcset="./img/x1-mob/portfolio-1.jpg 1x,
+                    <source srcset="./img/x1-mob/port-1-x1.jpg 1x,
                                     ./img/x2-mob/port-1-x2.jpg 2x"
                                     media="(min-width:320px)"
                                     />
-                                    <img src="./img/jpg-img/portfolio-1.jpg" alt="team"> 
+                                    <img src="./img/jpg-img/portfolio-1x.jpg" alt="team"> 
                 </picture>
                 <p class="text-menu">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.
@@ -340,6 +377,7 @@
     </div>
     </div>
 </footer> 
-    <script src="./js/modal.js"></script>                       
+    <script src="./js/modal.js"></script>
+    <script src="./js/mob-menu.js"></script>                       
 </body>
 </html>
