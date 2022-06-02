@@ -91,7 +91,7 @@
 
 
 .adres{
-    width: 231px;
+    text-align: center;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
@@ -100,12 +100,18 @@
     letter-spacing: 0.03em;
     color: var(--wite);
     padding-top: 20px;
-    text-align: left;
+    @media screen and(min-width:1200px) {
+        width: 231px;   
+        text-align: left;    
+    }
+    
     
 }
 
 .list-footer{
-    text-align: left;
+    @media screen and(min-width:1200px) {
+        text-align: left;    
+    }
 }
 
 

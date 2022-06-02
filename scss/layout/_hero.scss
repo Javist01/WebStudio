@@ -78,17 +78,6 @@
     }
 }
 
-.hero-button-text{
-    font-style: normal;
-    font-family: 'Roboto';
-    font-size: 16px;
-    font-weight: 700;
-    text-align: center;
-    letter-spacing: 0.06em;
-    line-height: 30px;
-    color: var(--wite);
-    
-}
 
 .hero-button{
     min-width: 200px;
@@ -101,6 +90,16 @@
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     &:hover{
         background-color: #188CE8;
+    }
+    &{
+        font-style: normal;
+        font-family: 'Roboto';
+        font-size: 16px;
+        font-weight: 700;
+        text-align: center;
+        letter-spacing: 0.06em;
+        line-height: 30px;
+        color: var(--wite);
     }
 }
 }

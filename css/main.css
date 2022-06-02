@@ -522,17 +522,6 @@ img {
   }
 }
 
-.hero-img .hero-button-text {
-  font-style: normal;
-  font-family: 'Roboto';
-  font-size: 16px;
-  font-weight: 700;
-  text-align: center;
-  letter-spacing: 0.06em;
-  line-height: 30px;
-  color: var(--wite);
-}
-
 .hero-img .hero-button {
   min-width: 200px;
   min-height: 50px;
@@ -546,6 +535,17 @@ img {
 
 .hero-img .hero-button:hover {
   background-color: #188CE8;
+}
+
+.hero-img .hero-button {
+  font-style: normal;
+  font-family: 'Roboto';
+  font-size: 16px;
+  font-weight: 700;
+  text-align: center;
+  letter-spacing: 0.06em;
+  line-height: 30px;
+  color: var(--wite);
 }
 
 .one-section {
@@ -1270,7 +1270,7 @@ img {
 }
 
 .adres {
-  width: 231px;
+  text-align: center;
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 400;
@@ -1279,11 +1279,19 @@ img {
   letter-spacing: 0.03em;
   color: var(--wite);
   padding-top: 20px;
-  text-align: left;
 }
 
-.list-footer {
-  text-align: left;
+@media screen and (min-width: 1200px) {
+  .adres {
+    width: 231px;
+    text-align: left;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .list-footer {
+    text-align: left;
+  }
 }
 
 .mail-footer {
