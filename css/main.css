@@ -1210,11 +1210,7 @@ img {
 
 @media screen and (min-width: 1200px) {
   .logo-footer-div {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    padding-left: inherit;
+    padding-left: 0;
   }
 }
 
@@ -1231,6 +1227,14 @@ img {
 @media screen and (min-width: 768px) {
   .footer-logo {
     line-height: 28px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-logo {
+    display: block;
+    padding-left: 0;
+    text-align: left;
   }
 }
 
@@ -1266,6 +1270,7 @@ img {
 }
 
 .adres {
+  width: 231px;
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 400;
@@ -1274,6 +1279,11 @@ img {
   letter-spacing: 0.03em;
   color: var(--wite);
   padding-top: 20px;
+  text-align: left;
+}
+
+.list-footer {
+  text-align: left;
 }
 
 .mail-footer {
@@ -1314,6 +1324,8 @@ img {
 @media screen and (min-width: 1200px) {
   .footer-social {
     padding-left: 70px;
+    padding-top: 0;
+    padding-right: 0;
     align-items: inherit;
   }
 }

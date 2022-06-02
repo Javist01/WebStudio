@@ -39,11 +39,7 @@
         display: block;
     }
     @media screen and(min-width:1200px) {
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: flex-start;
-        padding-left: inherit;
+        padding-left: 0;
     }
 
 }
@@ -58,6 +54,12 @@
     letter-spacing: 0.03em;
     @media screen and(min-width:768px) {
         line-height: 28px;
+    }
+
+    @media screen and(min-width:1200px) {
+        display: block;
+        padding-left: 0;
+        text-align: left;
     }
     
 }
@@ -89,6 +91,7 @@
 
 
 .adres{
+    width: 231px;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
@@ -97,7 +100,12 @@
     letter-spacing: 0.03em;
     color: var(--wite);
     padding-top: 20px;
+    text-align: left;
     
+}
+
+.list-footer{
+    text-align: left;
 }
 
 
